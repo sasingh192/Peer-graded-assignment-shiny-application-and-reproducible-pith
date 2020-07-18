@@ -1,0 +1,46 @@
+---
+title: 'Course Project: Shiny Application and Reproducible Pitch'
+author: "Saurabh Singh"
+date: "7/18/2020"
+output: ioslides_presentation
+---
+
+## Mtcars Analysis Report
+
+In week 1 lectures, two models were developed and deployed as a Shiny App to
+model vehicle horsepower vs. mpg. 
+
+- Model 1 was a relatively simpler model comprising of linear fit between horsepower and mpg
+- Model 2 comprised of broken stick model, and the breakpoint was randomly picked at 20
+
+*Break point at 20 mpg in Model 2 was a random choice,* and it will be better to
+chose it by performing optimization. 
+
+## Application Overview
+
+- Vehicle hosepower was modeled using mpg
+- **Breakpoint in model 2 was obtained by performing an optimization using "optimize" function**
+
+The function *optimize* searches the interval from *lower* to *upper* for a minimum or maximum of the function with respect to its first argument.
+
+Type help(*optimize*) to find out details about this function.
+
+
+## Slide with Complete Reporting Application
+
+Click the link below for the application.
+
+https://sasingh192.shinyapps.io/shiny_project/
+
+Click the line below for compiled project files on github repo.
+
+https://github.com/sasingh192/Peer-graded-assignment-shiny-application-and-reproducible-pith.git
+
+## Data Used
+
+The data used for this application is the mtcars dataset, which is part of base R. It has 32 rows and 11 variables.
+```{r, message=FALSE}
+head(mtcars)
+```
+
+
